@@ -44,7 +44,7 @@ public class main extends JFrame implements ActionListener {
 		contentPane.setLayout(null);
 		setContentPane(contentPane);
 		
-		singlesRadio = new JRadioButton("Singles");
+		singlesRadio = new JRadioButton("Singles/Other");
 		singlesRadio.setBounds(282, 7, 75, 23);
 		singlesRadio.addActionListener(this);
 		singlesRadio.setFocusable(false);
