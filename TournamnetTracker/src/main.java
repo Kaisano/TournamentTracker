@@ -7,6 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JRadioButton;
+import javax.swing.SwingConstants;
 
 public class main extends JFrame implements ActionListener {
 	private JRadioButton singlesRadio, doublesRadio;
@@ -45,7 +46,8 @@ public class main extends JFrame implements ActionListener {
 		setContentPane(contentPane);
 		
 		singlesRadio = new JRadioButton("Singles/Other");
-		singlesRadio.setBounds(282, 7, 75, 23);
+		singlesRadio.setHorizontalAlignment(SwingConstants.RIGHT);
+		singlesRadio.setBounds(219, 7, 137, 23);
 		singlesRadio.addActionListener(this);
 		singlesRadio.setFocusable(false);
 		contentPane.add(singlesRadio);
