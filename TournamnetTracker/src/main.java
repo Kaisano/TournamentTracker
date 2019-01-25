@@ -2,6 +2,7 @@ import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -13,11 +14,13 @@ public class main extends JFrame implements ActionListener {
 	private JRadioButton singlesRadio, doublesRadio;
 	
 	private JPanel contentPane;
-	singles singlesPanel = new singles();
+	static singles singlesPanel;
 	/**
 	 * Launch the application.
+	 * @throws IOException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		singlesPanel = new singles();
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
