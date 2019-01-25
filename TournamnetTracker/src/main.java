@@ -37,7 +37,7 @@ public class main extends JFrame implements ActionListener {
 	 */
 	public main() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(0, 0, 450, 800);
+		setBounds(0, 0, 425, 800);
 		
 		contentPane = new JPanel();
 		contentPane.setFocusable(false);
@@ -47,16 +47,17 @@ public class main extends JFrame implements ActionListener {
 		
 		singlesRadio = new JRadioButton("Singles/Other");
 		singlesRadio.setHorizontalAlignment(SwingConstants.RIGHT);
-		singlesRadio.setBounds(219, 7, 137, 23);
+		singlesRadio.setBounds(175, 7, 137, 23);
 		singlesRadio.addActionListener(this);
 		singlesRadio.setFocusable(false);
 		contentPane.add(singlesRadio);
 		
 		doublesRadio = new JRadioButton("Doubles");
-		doublesRadio.setBounds(358, 7, 63, 23);
+		doublesRadio.setBounds(314, 7, 83, 23);
 		doublesRadio.addActionListener(this);
 		doublesRadio.setFocusable(false);
 		contentPane.add(doublesRadio);
+		singlesPanel.setBounds(0, 30, 424, 740);
 		
 		contentPane.add(singlesPanel);
 		singlesPanel.setVisible(false);

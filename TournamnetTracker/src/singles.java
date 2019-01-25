@@ -35,16 +35,16 @@ public class singles extends JPanel {
 		JLabel scorePlayer1 = new JLabel("0");
 		scorePlayer1.setFont(new Font("Tahoma", Font.PLAIN, 95));
 		scorePlayer1.setHorizontalAlignment(SwingConstants.CENTER);
-		scorePlayer1.setBounds(20, 478, 149, 168);
+		scorePlayer1.setBounds(10, 478, 150, 102);
 		add(scorePlayer1);
 		
-		JButton btnP1Up = new JButton("");
-		btnP1Up.setBounds(179, 478, 40, 82);
-		add(btnP1Up);
+		JButton btnP1minus = new JButton("");
+		btnP1minus.setBounds(10, 584, 60, 40);
+		add(btnP1minus);
 		
-		JButton btnP1Down = new JButton("");
-		btnP1Down.setBounds(179, 564, 40, 82);
-		add(btnP1Down);
+		JButton btnP1plus = new JButton("");
+		btnP1plus.setBounds(100, 584, 60, 40);
+		add(btnP1plus);
 		
 		JLabel EventLbl = new JLabel("Event");
 		EventLbl.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -57,22 +57,22 @@ public class singles extends JPanel {
 		p1sponsorField.setBounds(97, 193, 303, 20);
 		add(p1sponsorField);
 		
-		JLabel p1sponsorlbl = new JLabel("Alias");
-		p1sponsorlbl.setHorizontalAlignment(SwingConstants.RIGHT);
-		p1sponsorlbl.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		p1sponsorlbl.setBounds(20, 199, 67, 14);
-		add(p1sponsorlbl);
+		JLabel p1aliaslbl = new JLabel("Alias");
+		p1aliaslbl.setHorizontalAlignment(SwingConstants.RIGHT);
+		p1aliaslbl.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		p1aliaslbl.setBounds(20, 199, 67, 14);
+		add(p1aliaslbl);
 		
 		p1nameField = new JTextField();
 		p1nameField.setColumns(10);
 		p1nameField.setBounds(97, 224, 303, 20);
 		add(p1nameField);
 		
-		JLabel p1namelbl = new JLabel("Sponsor");
-		p1namelbl.setHorizontalAlignment(SwingConstants.RIGHT);
-		p1namelbl.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		p1namelbl.setBounds(20, 230, 67, 14);
-		add(p1namelbl);
+		JLabel p1sponsorlbl = new JLabel("Sponsor");
+		p1sponsorlbl.setHorizontalAlignment(SwingConstants.RIGHT);
+		p1sponsorlbl.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		p1sponsorlbl.setBounds(20, 230, 67, 14);
+		add(p1sponsorlbl);
 		
 		JLabel lblPlayer = new JLabel("Player 1");
 		lblPlayer.setHorizontalAlignment(SwingConstants.LEFT);
@@ -99,28 +99,40 @@ public class singles extends JPanel {
 		JLabel p2sponsorlbl = new JLabel("Sponsor");
 		p2sponsorlbl.setHorizontalAlignment(SwingConstants.RIGHT);
 		p2sponsorlbl.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		p2sponsorlbl.setBounds(20, 368, 67, 14);
+		p2sponsorlbl.setBounds(20, 363, 67, 14);
 		add(p2sponsorlbl);
 		
-		JLabel p2namelbl = new JLabel("Alias");
-		p2namelbl.setHorizontalAlignment(SwingConstants.RIGHT);
-		p2namelbl.setFont(new Font("Tahoma", Font.PLAIN, 14));
-		p2namelbl.setBounds(20, 337, 67, 14);
-		add(p2namelbl);
+		JLabel p2aliaslbl = new JLabel("Alias");
+		p2aliaslbl.setHorizontalAlignment(SwingConstants.RIGHT);
+		p2aliaslbl.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		p2aliaslbl.setBounds(20, 332, 67, 14);
+		add(p2aliaslbl);
 		
 		JLabel label = new JLabel("0");
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		label.setFont(new Font("Tahoma", Font.PLAIN, 95));
-		label.setBounds(281, 478, 149, 168);
+		label.setBounds(251, 478, 149, 102);
 		add(label);
 		
 		JButton button = new JButton("");
-		button.setBounds(231, 478, 40, 82);
+		button.setBounds(340, 584, 60, 40);
 		add(button);
 		
 		JButton button_1 = new JButton("");
-		button_1.setBounds(231, 564, 40, 82);
+		button_1.setBounds(251, 584, 60, 40);
 		add(button_1);
+		
+		JLabel p1namelbl = new JLabel("Alias");
+		p1namelbl.setHorizontalAlignment(SwingConstants.RIGHT);
+		p1namelbl.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		p1namelbl.setBounds(10, 455, 150, 14);
+		add(p1namelbl);
+		
+		JLabel label_2 = new JLabel("Sponsor");
+		label_2.setHorizontalAlignment(SwingConstants.RIGHT);
+		label_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		label_2.setBounds(10, 430, 150, 14);
+		add(label_2);
 		/*
 		Thread t = new Thread(new Runnable() { public void run() { 
 			while(true)
