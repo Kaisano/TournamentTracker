@@ -136,6 +136,7 @@ public class singles extends JPanel implements ActionListener{
 
 			@Override
 			public void changedUpdate(DocumentEvent e) {
+				
 			}
 		});
 		add(p1nameField);
