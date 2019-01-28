@@ -1,4 +1,7 @@
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -117,5 +120,15 @@ public class fileHelper {
     	PrintWriter writer = new PrintWriter(document.getPath(), "UTF-8");
         writer.println(message);
         writer.close();
+    }
+    
+    public String getFileText() throws IOException
+    {
+    	  File file = new File(document.getPath()); 
+    	  
+    	  BufferedReader br = new BufferedReader(new FileReader(file));
+    	  String line = br.readLine();
+    	  br.close();
+    	  return line;
     }
 }
