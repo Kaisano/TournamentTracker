@@ -62,6 +62,8 @@ public class singles extends JPanel implements ActionListener{
 		eventLbl.setFocusable(false);
 		add(eventLbl);
 		
+		//event text field to type in
+		//auto updates the files
 		eventField = new JTextField();
 		eventField.setBounds(97, 88, 303, 20);
 		eventField.getDocument().addDocumentListener(new DocumentListener() {
@@ -101,6 +103,7 @@ public class singles extends JPanel implements ActionListener{
 		lblPlayer1.setFocusable(false);
 		add(lblPlayer1);
 		
+		//does not change -- text right b4 the textfield
 		p1aliaslbl = new JLabel("Alias");
 		p1aliaslbl.setHorizontalAlignment(SwingConstants.RIGHT);
 		p1aliaslbl.setFont(new Font("Tahoma", Font.PLAIN, 14));
@@ -108,6 +111,8 @@ public class singles extends JPanel implements ActionListener{
 		p1aliaslbl.setFocusable(false);
 		add(p1aliaslbl);
 		
+		//name field to write in
+		//auto update files
 		p1nameField = new JTextField();
 		p1nameField.setColumns(10);
 		p1nameField.setBounds(97, 193, 303, 20);
@@ -141,6 +146,7 @@ public class singles extends JPanel implements ActionListener{
 		});
 		add(p1nameField);
 		
+		//does not change and is the label before the text field
 		p1sponsorlbl = new JLabel("Sponsor");
 		p1sponsorlbl.setHorizontalAlignment(SwingConstants.RIGHT);
 		p1sponsorlbl.setFont(new Font("Tahoma", Font.PLAIN, 14));
@@ -148,6 +154,8 @@ public class singles extends JPanel implements ActionListener{
 		p1sponsorlbl.setFocusable(false);
 		add(p1sponsorlbl);
 		
+		//text field for sponsor
+		//updates files automatically
 		p1sponsorField = new JTextField();
 		p1sponsorField.setColumns(10);
 		p1sponsorField.setBounds(97, 224, 303, 20);

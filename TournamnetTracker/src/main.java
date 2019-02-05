@@ -41,6 +41,8 @@ public class main extends JFrame implements ActionListener {
 	public main() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(0, 0, 425, 800);
+		setTitle("Tournament Tracker v0.2");
+		
 		
 		contentPane = new JPanel();
 		contentPane.setFocusable(false);
@@ -48,6 +50,7 @@ public class main extends JFrame implements ActionListener {
 		contentPane.setLayout(null);
 		setContentPane(contentPane);
 		
+		//radio buttons for determining whether the event is doubles or singles and switches options
 		singlesRadio = new JRadioButton("Singles/Other");
 		singlesRadio.setHorizontalAlignment(SwingConstants.RIGHT);
 		singlesRadio.setBounds(175, 7, 137, 23);
