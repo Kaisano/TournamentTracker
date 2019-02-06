@@ -189,6 +189,7 @@ public class singles extends JPanel implements ActionListener{
 		});
 		add(p1sponsorField);
 		
+		//label that changes according to name text field
 		p1namelbl = new JLabel("Alias");
 		p1namelbl.setHorizontalAlignment(SwingConstants.CENTER);
 		p1namelbl.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -196,6 +197,7 @@ public class singles extends JPanel implements ActionListener{
 		p1namelbl.setFocusable(false);
 		add(p1namelbl);
 		
+		//label that changes according to the sponsor text field
 		p1sponsorGamelbl = new JLabel("Sponsor");
 		p1sponsorGamelbl.setHorizontalAlignment(SwingConstants.CENTER);
 		p1sponsorGamelbl.setFont(new Font("Tahoma", Font.PLAIN, 18));
@@ -203,6 +205,7 @@ public class singles extends JPanel implements ActionListener{
 		p1sponsorGamelbl.setFocusable(false);
 		add(p1sponsorGamelbl);
 		
+		//score label that changes according to the buttons
 		p1scorelbl = new JLabel("0");
 		p1scorelbl.setFont(new Font("Tahoma", Font.PLAIN, 95));
 		p1scorelbl.setHorizontalAlignment(SwingConstants.CENTER);
